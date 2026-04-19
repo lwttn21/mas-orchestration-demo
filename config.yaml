@@ -1,0 +1,17 @@
+# LLM Configuration
+provider: "openrouter"
+
+openrouter:
+  model_name: "google/gemini-2.5-flash"  # günstig + schnell für Demo
+  base_url: "https://openrouter.ai/api/v1"
+
+model_parameters:
+  temperature: 0.2
+  max_tokens: 4096
+
+# MCP Server URLs (lokal, nicht Docker)
+mcp_servers:
+  math_server:
+    url: "http://127.0.0.1:3001/mcp"
+  text_server:
+    url: "http://127.0.0.1:3002/mcp"
