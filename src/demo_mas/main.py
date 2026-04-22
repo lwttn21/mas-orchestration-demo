@@ -12,9 +12,12 @@ async def main(query: str):
         async for state in processor.aprocess_query(query):
             final_state = state
 
-        last_msg = final_state["messages"][-1]
+        answer = next(
+            (m.content for m in reversed(final_state["messages"]) if m.content),
+            "(keine Antwort)",
+        )
         print("\n=== ANTWORT ===")
-        print(last_msg.content)
+        print(answer)
 
 
 if __name__ == "__main__":

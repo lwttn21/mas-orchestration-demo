@@ -13,6 +13,5 @@ model_parameters:
 mcp_servers:
   math_server:
     url: "http://127.0.0.1:3001/mcp"
-  # text_server wird in Phase 4 aktiviert
-  # text_server:
-  #   url: "http://127.0.0.1:3002/mcp"
+  text_server:
+    url: "http://127.0.0.1:3002/mcp"
