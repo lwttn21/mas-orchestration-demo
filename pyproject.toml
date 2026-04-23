@@ -5,6 +5,8 @@ requires-python = ">=3.11,<3.14"
 dependencies = [
     "langchain>=1.0",
     "langgraph>=1.0",
+    "langgraph-supervisor>=0.0.31",
+    "langgraph-swarm>=0.1.0",
     "langchain-openai>=0.2",
     "fastmcp>=2.13",
     "mcp>=1.0",
