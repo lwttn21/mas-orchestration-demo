@@ -1,7 +1,7 @@
 from langgraph.checkpoint.memory import MemorySaver
 from langgraph_swarm import create_swarm, create_handoff_tool
 
-from demo_mas.processors.base import QueryProcessor
+from demo_mas.processors.query_processor import QueryProcessor
 from demo_mas.common.prompts import (
     MATH_AGENT_SWARM_PROMPT,
     TEXT_AGENT_SWARM_PROMPT,

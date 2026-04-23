@@ -1,7 +1,7 @@
 from langgraph.graph import StateGraph, START, END
 from langgraph.checkpoint.memory import MemorySaver
 
-from demo_mas.processors.base import QueryProcessor
+from demo_mas.processors.query_processor import QueryProcessor
 from demo_mas.common.schema import AppState
 from demo_mas.common.prompts import MATH_AGENT_PROMPT, TEXT_AGENT_PROMPT
 from demo_mas.tools.math_tools import create_math_tools

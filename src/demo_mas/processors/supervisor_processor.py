@@ -1,7 +1,7 @@
 from langgraph.checkpoint.memory import MemorySaver
 from langgraph_supervisor import create_supervisor
 
-from demo_mas.processors.base import QueryProcessor
+from demo_mas.processors.query_processor import QueryProcessor
 from demo_mas.common.prompts import (
     MATH_AGENT_SOLO_PROMPT,
     TEXT_AGENT_SOLO_PROMPT,
